@@ -38,3 +38,5 @@ $(document).ready(function() {
         searchInput.val(""); // Menghapus teks dalam input
     });
 });
+
+

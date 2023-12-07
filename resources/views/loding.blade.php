@@ -24,6 +24,6 @@
         // Wait for 2 seconds and then redirect to home
         setTimeout(function () {
             window.location.href = "{{ url('/home') }}";
-        }, 5000);
+        }, 3000);
 </script>
 </html>
