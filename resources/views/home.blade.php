@@ -94,14 +94,18 @@
         <div class="container">
             <div class="service-content">
                 <div class="row">
+                    <h2>Divisi Himpunan Teknologi Informasi</h2>
                     <div class="col-md-4 col-sm-6">
                         <div class="single-service-item">
                             <div class="single-service-icon">
                                 <i class="flaticon-car"></i>
                             </div>
-                            <h2><a href="#">Megabit <span> of</span> car</a></h2>
+                            <div class="logo-wrapper">
+                                <img src="{{ asset('assets/images/home/LogoKPH.jpg') }}" class="logo-image" alt="...">
+                            </div>
+                            <h2><a href="#">KPH</a></h2>
                             <p>
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.  
+                                Informasi Seputar KPH Teknologi Informasi  
                             </p>
                         </div>
                     </div>
@@ -110,9 +114,12 @@
                             <div class="single-service-icon">
                                 <i class="flaticon-car-repair"></i>
                             </div>
-                            <h2><a href="#">unlimited repair warrenty</a></h2>
+                            <div class="logo-wrapper">
+                                <img src="{{ asset('assets/images/home/LogoKPM.jpg') }}" class="logo-image" alt="...">
+                            </div>
+                            <h2><a href="#">KPM</a></h2>
                             <p>
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia.  
+                                Informasi Seputar KPM Teknologi Informasi  
                             </p>
                         </div>
                     </div>
@@ -121,9 +128,12 @@
                             <div class="single-service-icon">
                                 <i class="flaticon-car-1"></i>
                             </div>
-                            <h2><a href="#">insurence support</a></h2>
+                            <div class="logo-wrapper">
+                                <img src="{{ asset('assets/images/home/LogoBPR.jpg') }}" class="logo-image" alt="...">
+                            </div>
+                            <h2><a href="#">BPR</a></h2>
                             <p>
-                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut den fugit sed quia. 
+                                Informasi Seputar BPR Teknologi Informasi 
                             </p>
                         </div>
                     </div>
@@ -132,46 +142,79 @@
         </div><!--/.container-->
     </section><!--/.service-->
 
-    <section>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <!-- ======= Hero Slider Section ======= -->
+        <section id="hero-slider" class="hero-slider">
+            <div class="container-md" data-aos="fade-in">
+                <div class="row">
+                    <h2 style="color: black;">Berita Popular</h2>
+                    <div class="col-12">
+                        <div class="carousel slide" id="featuredPostsCarousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="single-post.html" class="d-block img-bg align-items-end"
+                                        style="background-image: url('/assets/images/news/megabit.jpg');">
+                                        <div class="img-bg-inner" style="color: white;">
+                                            <h2>Penyelengaraan Megabit 2023</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
+                                                est mollitia! Beatae minima assumenda repellat harum vero, officiis
+                                                ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
+                                                necessitatibus rem atque.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="single-post.html" class="d-block img-bg align-items-end"
+                                        style="background-image: url('/assets/images/news/Penjahiman2.jpg');">
+                                        <div class="img-bg-inner" style="color: white;">
+                                            <h2>Penjahiman Mahasiswa IT Angkatan 2022</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
+                                                est mollitia! Beatae minima assumenda repellat harum vero, officiis
+                                                ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
+                                                necessitatibus rem atque.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="single-post.html" class="d-block img-bg align-items-end"
+                                        style="background-image: url('/assets/images/news/KunjuganTrans.jpg');">
+                                        <div class="img-bg-inner" style="color: white;">
+                                            <h2>Kunjugan Mahasiswa Teknologi Infromasi ke TransTV</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
+                                                est mollitia! Beatae minima assumenda repellat harum vero, officiis
+                                                ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
+                                                necessitatibus rem atque.</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="single-post.html" class="d-block img-bg align-items-end"
+                                        style="background-image: url('/assets/images/news/BasketEverest.jpg');">
+                                        <div class="img-bg-inner" style="color: white;">
+                                            <h2>Final Basket Everest Teknologi Informasi 2023</h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem neque
+                                                est mollitia! Beatae minima assumenda repellat harum vero, officiis
+                                                ipsam magnam obcaecati cumque maxime inventore repudiandae quidem
+                                                necessitatibus rem atque.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#featuredPostsCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#featuredPostsCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="{{ asset('assets/logo/logo.png') }}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="{{ asset('assets/logo/logo.png') }}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="{{ asset('assets/logo/logo.png') }}" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
+        </section><!-- End Hero Slider Section -->
 
 
 

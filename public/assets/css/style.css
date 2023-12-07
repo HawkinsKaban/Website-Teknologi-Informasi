@@ -185,10 +185,14 @@ button {background: transparent;border: 0;font-size: 16px;text-transform: capita
 }
 
 
+.single-service-item .logo-image {
+    border-radius: 50%;
+}
+
+
 /*-------------------------------------
         5. Service 
 --------------------------------------*/
-.service { padding: 260px 0 87px;}
 
 .single-service-item{
     text-align: center;
@@ -295,7 +299,7 @@ button {background: transparent;border: 0;font-size: 16px;text-transform: capita
   
   .author .photo img {
     width: 40px;
-    border-radius: 50%;
+    border-radius: 40%;
     margin-bottom: 0;
   }
   
