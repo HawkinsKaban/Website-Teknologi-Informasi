@@ -226,7 +226,7 @@
     <div class="container-event">
 
         <div class="row justify-content-center text-center">
-
+            <h2>EVENT</h2>
             <div class="offset-sm-1 col-sm-5 event">
                 <img src="{{ asset('assets/images/Event/EVEREST.JPG') }}" class="img-fluid" alt="">
                 <div class="event-content">
