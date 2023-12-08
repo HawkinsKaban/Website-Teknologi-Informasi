@@ -80,7 +80,7 @@
 
 
 
-    <!--event-->
+    <!--event page-->
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -149,8 +149,9 @@
                 <div class="img-overlay"></div>
             </div>
             <div class="img-content">
-                <h1>Jadwal Acara</h1>
-                <span>Selamat datang di halaman event Teknologi Informasi! Kami di HMIT dengan bangga mempersembahkan rangkaian acara yang menggembirakan dan informatif, menjembatani Anda dengan perkembangan terbaru di jurusan Teknologi Informasi Telkom University.</span>
+                <h1>EVENTS</h1>
+                <span>Selamat datang di halaman Event Teknologi Informasi! Kami di HMIT dengan bangga mempersembahkan rangkaian acara yang menggembirakan dan informatif, menjembatani Anda dengan perkembangan terbaru di jurusan
+                     Teknologi Informasi Telkom University.</span>
             </div>
         </div>
     </body>
@@ -158,8 +159,8 @@
     </html>
 
     
-    
-    <head>
+<!-- Event Main -->    
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
@@ -168,17 +169,23 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .main-header {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 36px;
+            color: #6ab04c;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .container-event {
-            margin: 200px auto;
-        }
-
-        .main-event {
-            font-weight: bold;
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-align: left;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
         }
 
         .event {
@@ -192,7 +199,7 @@
             cursor: pointer;
             background: #fff !important;
             margin-top: -70px !important;
-            margin-left: 0 !important;
+            margin-left: 0px !important;
             position: absolute;
             word-wrap: break-word;
         }
@@ -230,16 +237,15 @@
 </head>
 
 <body>
+    <div class="main-header">Main Event</div>
+
     <div class="container-event">
 
-        <div class="main-event">Main Event</div>
-
-        <div class="row justify-content-center text-center">
-
-            <div class="offset-sm-1 col-sm-5 event">
-                <img src="{{ asset('assets/images/Event/EVEREST.JPG') }}" class="img-fluid" alt="">
-                <div class="event-content">
-                    <h4>EVEREST</h4>
+    <div class="row justify-content-center text-center">
+        <div class="offset-sm-1 col-sm-5 event">
+            <img src="{{ asset('assets/images/Event/EVEREST.JPG') }}" class="img-fluid" alt="">
+            <div class="event-content">
+                <h4>EVEREST</h4>
                     <span>Kompetisi olahraga, e-Sports, dan keterampilan lainnya untuk warga Himpunan Mahasiswa Teknologi Informasi (HMIT). Meningkatkan keterampilan, bakat, dan semangat kompetitif dalam bidang pendidikan.</span><br>
                 </div>
             </div>
@@ -297,92 +303,102 @@
     </div>
 </body>
 
-</html>
+<!-- Event other -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kucing Slider</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Kucing Slider</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            width: 80%;
+            margin: 0 auto;
+            background-color: #f0f0f0; /* Warna abu-abu */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px; /* Jarak dengan footer */
+        }
 
-            .slider-container {
-                position: relative;
-                overflow: hidden;
-                width: 80%;
-                margin: 0 auto;
-                background-color: #f0f0f0; /* Warna abu-abu */
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
-      
-            .slider-wrapper {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-            }
-        
-            .slider {
-                flex: 0 0 22%; /* 22% width for each slider in a row */
-                margin-right: 2%; /* Right margin to create spacing */
-                position: relative;
-            }
-        
-            .slider img {
-                width: 100%;
-                height: auto;
-            }
-        
-            .caption {
-                text-align: center;
-                margin-top: 10px;
-                font-size: 16px;
-                color: #777;
-            }
-        
-            .slider-buttons {
-                position: absolute;
-                top: 50%;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-            }
-        
-            .slider-button {
-                font-size: 24px;
-                background: none;
-                border: none;
-                outline: none;
-                cursor: pointer;
-            }
-        
-            .prev {
-                left: 10px;
-                transform: translateY(-50%);
-            }
-        
-            .next {
-                right: 10px;
-                transform: translateY(-50%);
-            }
-        </style>
+        .slider-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
 
-    </head>
+        .slider {
+            flex: 0 0 22%; /* 22% width for each slider in a row */
+            margin-right: 2%; /* Right margin to create spacing */
+            position: relative;
+        }
 
-      <body>
-      
-      <div class="slider-container">
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #777;
+        }
+
+        .slider-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .slider-button {
+            font-size: 24px;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        .next {
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        .mini-event {
+            text-align: center;
+            font-size: 36px;
+            color: #000;
+            font-weight: bold;
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider-container">
+        <div class="mini-event">Mini Event</div>
+
         <div class="slider-wrapper">
-          <div class="slider">
-            <img src="https://placekitten.com/800/400" alt="Kucing 1">
-            <div class="caption">Keterangan Slider 1</div>
-          </div>
-          <div class="slider">
-            <img src="https://placekitten.com/801/400" alt="Kucing 2">
-            <div class="caption">Keterangan Slider 2</div>
-          </div>
+            <div class="slider">
+                <img src="https://placekitten.com/800/400" alt="Kucing 1">
+                <div class="caption">Keterangan Slider 1</div>
+            </div>
+            <div class="slider">
+                <img src="https://placekitten.com/801/400" alt="Kucing 2">
+                <div class="caption">Keterangan Slider 2</div>
+            </div>
           <div class="slider">
             <img src="https://placekitten.com/802/400" alt="Kucing 3">
             <div class="caption">Keterangan Slider 3</div>
