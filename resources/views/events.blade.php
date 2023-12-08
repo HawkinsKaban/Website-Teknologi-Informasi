@@ -159,7 +159,7 @@
 
     
     
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event</title>
@@ -174,8 +174,15 @@
             margin: 200px auto;
         }
 
+        .main-event {
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
         .event {
-            margin-bottom: 100px; /* Tambahkan jarak antara setiap event */
+            margin-bottom: 100px;
         }
 
         .event-content {
@@ -185,9 +192,9 @@
             cursor: pointer;
             background: #fff !important;
             margin-top: -70px !important;
-            margin-left: 0px !important;
+            margin-left: 0 !important;
             position: absolute;
-            word-wrap: break-word; /* Menambahkan word-wrap untuk otomatis wrapping */
+            word-wrap: break-word;
         }
 
         .event-content h4 {
@@ -200,10 +207,10 @@
         .event-content span {
             font-style: italic;
             font-size: 15px;
-            white-space: pre-wrap; /* Menambahkan white-space untuk otomatis wrapping */
-            max-width: 550px; /* Atur maksimum lebar kolom span sesuai kebutuhan */
-            display: block; /* Memastikan bahwa max-width bekerja dengan baik */
-            margin: 0 auto; /* Untuk memusatkan span jika ukurannya kurang dari max-width */
+            white-space: pre-wrap;
+            max-width: 550px;
+            display: block;
+            margin: 0 auto;
         }
 
         .event img {
@@ -225,8 +232,10 @@
 <body>
     <div class="container-event">
 
+        <div class="main-event">Main Event</div>
+
         <div class="row justify-content-center text-center">
-            <h2>EVENT</h2>
+
             <div class="offset-sm-1 col-sm-5 event">
                 <img src="{{ asset('assets/images/Event/EVEREST.JPG') }}" class="img-fluid" alt="">
                 <div class="event-content">
