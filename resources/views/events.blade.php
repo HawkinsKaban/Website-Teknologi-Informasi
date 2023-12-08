@@ -226,7 +226,11 @@
     <div class="container-event">
 
         <div class="row justify-content-center text-center">
+<<<<<<< HEAD
 
+=======
+            <h2>EVENT</h2>
+>>>>>>> 46bf4ed93fd20f6b49c85dbf96c088b8dfe363ab
             <div class="offset-sm-1 col-sm-5 event">
                 <img src="{{ asset('assets/images/Event/EVEREST.JPG') }}" class="img-fluid" alt="">
                 <div class="event-content">
