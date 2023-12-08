@@ -7,21 +7,21 @@
     <!-- Menggunakan Bootstrap 5.3.2 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <!-- Font Family - Menggunakan font Poppins dan Rufina dari Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
     <title>Teknologi Informasi</title>
     <link rel="shortcut icon" type="image/icon" href="{{ asset('assets/logo/logo.png') }}" />
-
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/responsive.css') }}">
 </head>
 
-
 <body>
     <header>
         <div class="container-fluid " style="background-color:#204B05 ;">
-            <div class="row align-items-center ">
-                <div class="col-md-9 col-sm-12 ">
+            <div class="row align-items-center">
+                <div class="col-md-9 col-sm-12">
                     <nav class="navbar">
                         <a class="navbar-brand px-5 text-white" href="{{ url('/home') }}">
                             <img src="{{ asset('assets/logo/logo.png') }}" alt="Logo" width="50" height="50">
@@ -59,132 +59,412 @@
             </div>
         </div>
 
-    <!-- Overlay -->
-    <div id="myNav" class="overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="overlay-content">
-                        <a href="{{ url('/home') }}">Home</a><br>
-                        <a href="{{ url('/news') }}">News</a><br>
-                        <a href="{{ url('/events') }}">Events</a><br>
-                        <a href="{{ url('/academics') }}">Academics</a><br>
-                        <a href="{{ url('/about') }}">About</a><br>
-                        <a id="closeButton" href="javascript:void(0)" class="closebtn">×</a>
+        <!-- Overlay -->
+        <div id="myNav" class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="overlay-content">
+                            <a href="{{ url('/home') }}">Home</a><br>
+                            <a href="{{ url('/news') }}">News</a><br>
+                            <a href="{{ url('/events') }}">Events</a><br>
+                            <a href="{{ url('/academics') }}">Academics</a><br>
+                            <a href="{{ url('/about') }}">About</a><br>
+                            <a id="closeButton" href="javascript:void(0)" class="closebtn">×</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </header>
 
 
+
     <!--event-->
-    <main id="Events" class="event">
-        <section  class="container-fluid head">
-            <div class="row">
-                <div class="Title col-6">
-                    <h1>Multiverse Of Event, Giving Solutions Service Since 2007</h1>
-                </div>
-                <div class="col-6">
-                    <img src="assets/logo/logo.png" alt="" width="50" height="50">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3 everest">Everest</div>
-                <div class="col-3 megabit">Megabit</div>
-                <div class="col-3 proximiti">Proximiti</div>
-                <div class="col-3 fest">The Spit-Fest</div>
-            </div>
-        </section>
-
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="assets/logo/logo.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>EVEREST</h5>
-                  <p>EVEREST 2023 merupakan sebuah kegiatan dimana mahasiswa Information Technology bisa bersilaturahmi dengan cara berkompetisi di bidang sport, esport dan juga keterampilan yang lainnya.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="assets/logo/logo.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>MEGABIT</h5>
-                  <p>MEGABIT kegiatan sebagai bagian dari upaya pengenalan jurusan Teknologi Informasi kepada mahasiswa baru untuk memberikan pemahaman yang komprehensif tentang jurusan tersebut, serta memperkenalkan berbagai potensi dan peluang yang ada di bidang Teknologi Informasi.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="assets/logo/logo.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>PROXIMITI</h5>
-                  <p>PROXIMITI merupakan kegiatan Kaderisasi yang ditujukan kepada mahasiswa/i baru S1 Teknologi Informasi untuk membentuk karakter calon - calon pemimpin dalam sebuah organisasi sehingga tercipta rasa kekeluargaan dan kebanggaan terhadap jurusan.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="assets/logo/logo.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>THE SPIT FEST</h5>
-                  <p>THE SPIT FESTIVAL Kegiatan ini bertujuan untuk memberikan wadah bagi mahasiswa/i dan masyarakat umum untuk mengembangkan potensi diri, khususnya di bidang entrepreneurship, seni dan budaya, serta kewirausahaan.</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-        <!-- <dl class="row">
-            <dt class="col-sm-3" width = "20">HMIT</dt>
-            <dd class="col-sm-9">KPH HMIT 2023</dd>
-          
-            <dt class="col-sm-3">TEKNOLOGI INFORMASI</dt>
-            <dd class="col-sm-9">
-              <p>Visi KPH HMIT 2023</p>
-              <p>Mewujudkan Himpunan Mahasiswa S1 Information Technology yang memiliki
-                integritas, loyalitas, dan inovatif sehingga dapat bermanfaat dan menjadi panutan untuk penerus Himpunan S1 Information Technology selanjutnya.
-            </p>
-              <p>And some more placeholder definition text.</p>
-            </dd>
-          
-            <dt class="col-sm-3">Another term</dt>
-            <dd class="col-sm-9">defini hmit</dd>
-          
-            <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-            <dd class="col-sm-9">defini hmit</dd>
-          
-            <dt class="col-sm-3">Nesting</dt>
-            <dd class="col-sm-9">
-              <dl class="row">
-                <dt class="col-sm-4">Nested definition list</dt>
-            </dl>
-            </dd>
-          </dl> -->
-
-        <section class="description">
-            <div class="row"></div>
-                <div class="col-6"></div>
-                <div class="col-6"></div>
-        </section>
-
-        <section class="various-event">
-            <div class="row"></div>
-            <div class="row"></div>
-        </section>
-    </main>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jadwal Acara</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
     
+            .header {
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+    
+            .header img {
+                height: 100vh;
+                width: 100%;
+            }
+    
+            .header .img-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background: #000;
+                z-index: 1;
+                opacity: 0.5;
+            }
+    
+            .header .img-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+                color: #fff !important;
+                text-align: center;
+                justify-content: center !important;
+            }
+    
+            .header .img-content h1 {
+                font-weight: bold;
+                font-style: italic;
+                font-size: 60px;
+                margin-bottom: 20px !important;
+            }
+    
+            .header .img-content span {
+                font-weight: bold;
+                font-style: italic;
+                font-size: 20px;
+                letter-spacing: 0.2px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="header">
+            <div class="img-parent">
+                <div class="img">
+                    <img src="{{ asset('assets/images/Event/Eventsbanner.jpg') }}" alt="">
+                </div>
+                <div class="img-overlay"></div>
+            </div>
+            <div class="img-content">
+                <h1>Jadwal Acara</h1>
+                <span>Selamat datang di halaman event Teknologi Informasi! Kami di HMIT dengan bangga mempersembahkan rangkaian acara yang menggembirakan dan informatif, menjembatani Anda dengan perkembangan terbaru di jurusan Teknologi Informasi Telkom University.</span>
+            </div>
+        </div>
+    </body>
+    
+    </html>
 
+    
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container-event {
+            margin: 200px auto;
+        }
+
+        .event {
+            margin-bottom: 100px; /* Tambahkan jarak antara setiap event */
+        }
+
+        .event-content {
+            box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.3),
+                inset 10px 10px 10px -10px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            cursor: pointer;
+            background: #fff !important;
+            margin-top: -70px !important;
+            margin-left: 0px !important;
+            position: absolute;
+            word-wrap: break-word; /* Menambahkan word-wrap untuk otomatis wrapping */
+        }
+
+        .event-content h4 {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .event-content span {
+            font-style: italic;
+            font-size: 15px;
+            white-space: pre-wrap; /* Menambahkan white-space untuk otomatis wrapping */
+            max-width: 550px; /* Atur maksimum lebar kolom span sesuai kebutuhan */
+            display: block; /* Memastikan bahwa max-width bekerja dengan baik */
+            margin: 0 auto; /* Untuk memusatkan span jika ukurannya kurang dari max-width */
+        }
+
+        .event img {
+            transition: 0.6s;
+            margin-left: -40px;
+        }
+
+        .event img:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+
+        .event .col-sm-5 {
+            margin-bottom: 200px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-event">
+
+        <div class="row justify-content-center text-center">
+
+            <div class="offset-sm-1 col-sm-5 event">
+                <img src="{{ asset('assets/images/Event/EVEREST.JPG') }}" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>EVEREST</h4>
+                    <span>Kompetisi olahraga, e-Sports, dan keterampilan lainnya untuk warga Himpunan Mahasiswa Teknologi Informasi (HMIT). Meningkatkan keterampilan, bakat, dan semangat kompetitif dalam bidang pendidikan.</span><br>
+                </div>
+            </div>
+
+            <div class="offset-sm-1 col-sm-5 event">
+                <img src="{{ asset('assets/images/Event/MEGABIT.JPG') }}" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>MEGABIT</h4>
+                    <span>Kegiatan pengenalan jurusan Teknologi Informasi untuk mahasiswa baru. Memberikan pemahaman komprehensif, memperkenalkan potensi dan peluang di bidang Teknologi Informasi.</span><br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center text-center">
+
+            <div class="offset-sm-1 col-sm-5 event">
+                <img src="{{ asset('assets/images/Event/PROXI.JPG') }}" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>PROXIMITI</h4>
+                    <span>Kegiatan kaderisasi untuk mahasiswa baru S1 Teknologi Informasi. Membentuk karakter calon pemimpin, menciptakan rasa kekeluargaan, dan memberikan media pembelajaran di luar bidang akademik.</span><br>
+                </div>
+            </div>
+
+            <div class="offset-sm-1 col-sm-5 event">
+                <img src="{{ asset('assets/images/Event/VISCOM.jpg') }}" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>VISIT COMPANY</h4>
+                    <span>Kunjungan ke perusahaan sebagai bagian dari kegiatan HMIT untuk membantu mahasiswa memperoleh pemahaman dan pengetahuan yang lebih baik tentang dunia industri IT.</span><br>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center text-center">
+
+            <div class="offset-sm-1 col-sm-5 event">
+                <img src="{{ asset('assets/images/Event/PENJAHIMAN.JPG') }}" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>PENJAHIMAN</h4>
+                    <span>Proyek fokus pada persiapan upacara penjahitan dalam HMIT (bagian dari rangkaian acara PROXIMITI). Melibatkan perencanaan dan pelaksanaan upacara dengan tujuan menghormati tradisi dan memperkuat ikatan di antara anggota HMIT.</span><br>
+                </div>
+            </div>
+
+            <div class="offset-sm-1 col-sm-5 event">
+                <img src="{{ asset('assets/images/Event/PARADE.jpg') }}" class="img-fluid" alt="">
+                <div class="event-content">
+                    <h4>PARADE</h4>
+                    <span>Kegiatan kaderisasi untuk mahasiswa baru S1 Teknologi Informasi. Membentuk karakter calon pemimpin, menciptakan rasa kekeluargaan, dan memberikan media pembelajaran di luar bidang akademik.</span><br>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kucing Slider</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .slider-container {
+                position: relative;
+                overflow: hidden;
+                width: 80%;
+                margin: 0 auto;
+                background-color: #f0f0f0; /* Warna abu-abu */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+      
+            .slider-wrapper {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+        
+            .slider {
+                flex: 0 0 22%; /* 22% width for each slider in a row */
+                margin-right: 2%; /* Right margin to create spacing */
+                position: relative;
+            }
+        
+            .slider img {
+                width: 100%;
+                height: auto;
+            }
+        
+            .caption {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 16px;
+                color: #777;
+            }
+        
+            .slider-buttons {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        
+            .slider-button {
+                font-size: 24px;
+                background: none;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+        
+            .prev {
+                left: 10px;
+                transform: translateY(-50%);
+            }
+        
+            .next {
+                right: 10px;
+                transform: translateY(-50%);
+            }
+        </style>
+
+    </head>
+
+      <body>
+      
+      <div class="slider-container">
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img src="https://placekitten.com/800/400" alt="Kucing 1">
+            <div class="caption">Keterangan Slider 1</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/801/400" alt="Kucing 2">
+            <div class="caption">Keterangan Slider 2</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/802/400" alt="Kucing 3">
+            <div class="caption">Keterangan Slider 3</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/803/400" alt="Kucing 4">
+            <div class="caption">Keterangan Slider 4</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/804/400" alt="Kucing 5">
+            <div class="caption">Keterangan Slider 5</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/805/400" alt="Kucing 6">
+            <div class="caption">Keterangan Slider 6</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/806/400" alt="Kucing 7">
+            <div class="caption">Keterangan Slider 7</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/807/400" alt="Kucing 8">
+            <div class="caption">Keterangan Slider 8</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/808/400" alt="Kucing 9">
+            <div class="caption">Keterangan Slider 9</div>
+          </div>
+          <div class="slider">
+            <img src="https://placekitten.com/809/400" alt="Kucing 10">
+            <div class="caption">Keterangan Slider 10</div>
+          </div>
+        </div>
+        <div class="slider-buttons">
+          <button class="slider-button prev" onclick="prevSlide()">&#10094;</button>
+          <button class="slider-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+      </div>
+      
+      <script>
+        const sliderWrapper = document.querySelector('.slider-wrapper');
+        const slides = document.querySelectorAll('.slider');
+        let currentSlide = 0;
+        let intervalId; // ID interval untuk berhenti ketika diperlukan
+      
+        function nextSlide() {
+          if (currentSlide < slides.length - 1) {
+            currentSlide++;
+          } else {
+            currentSlide = 0; // Kembali ke awal jika sudah di akhir
+          }
+          updateSlider();
+        }
+      
+        function prevSlide() {
+          if (currentSlide > 0) {
+            currentSlide--;
+          } else {
+            currentSlide = slides.length - 1; // Pindah ke akhir jika sudah di awal
+          }
+          updateSlider();
+        }
+      
+        function updateSlider() {
+          const translateValue = -currentSlide * (22 + 2) + '%'; // Ubah nilai margin-right
+          sliderWrapper.style.transform = 'translateX(' + translateValue + ')';
+        }
+      
+        // Fungsi untuk memulai otomatis slider setiap 3 detik
+        function startAutoSlide() {
+          intervalId = setInterval(() => {
+            nextSlide();
+          }, 3000); // Interval setiap 3 detik
+        }
+      
+        // Fungsi untuk menghentikan otomatis slider
+        function stopAutoSlide() {
+          clearInterval(intervalId);
+        }
+      
+        // Mulai otomatis slider saat halaman dimuat
+        startAutoSlide();
+      
+        // Hentikan otomatis slider ketika slider container dihover
+        const sliderContainer = document.querySelector('.slider-container');
+        sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+        sliderContainer.addEventListener('mouseleave', startAutoSlide);
+      </script>
+      
+      </body>
+    
     <!--footer-->
     <footer id="contact" class="contact">
         <div class="container">
@@ -255,8 +535,7 @@
     <!-- Bootstrap 5.3.2 JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <!-- Custom JS - Skrip JavaScript kustom untuk situs web -->
-    <script src="{{ asset('assets/js/custom.js') }}"></script>
-
+    <script src="assets/js/custom.js"></script>
 </body>
 
 </html>

@@ -78,7 +78,7 @@
         </div>
     </header>
 
-    <h2> NEWS</h2>
+    
     <main id="main">
         
         <!-- ======= Hero Slider Section ======= -->
@@ -86,6 +86,7 @@
             <div class="container-md" data-aos="fade-in">
                 <div class="row">
                     <div class="col-12">
+                    <h2> NEWS</h2>
                         <div class="carousel slide" id="featuredPostsCarousel" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
