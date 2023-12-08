@@ -291,7 +291,7 @@
             </div>
 
             <div class="offset-sm-1 col-sm-5 event">
-                <img src="{{ asset('assets/images/Event/PARADE.jpg') }}" class="img-fluid" alt="">
+                <img src="{{ asset('assets/images/Event/PARADE2.jpg') }}" class="img-fluid" alt="">
                 <div class="event-content">
                     <h4>PARADE</h4>
                     <span>Kegiatan kaderisasi untuk mahasiswa baru S1 Teknologi Informasi. Membentuk karakter calon pemimpin, menciptakan rasa kekeluargaan, dan memberikan media pembelajaran di luar bidang akademik.</span><br>
