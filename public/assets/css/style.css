@@ -737,20 +737,20 @@ button {background: transparent;border: 0;font-size: 16px;text-transform: capita
 }
 .box-txt-right h3{
 
-    color: #eeeff6;
+    color: #000000;
 }
 .box-txt-left{
    padding-top: 200px;
-   color: #eeeff6;
+   color: #000000;
 
 }
 .box-txt-left h1{
   
-   color: #eeeff6;
+   color: #000000 ;
 
 }
 
-.set-row-acdemic{
+.set-row-academic{
     background-image: url(../images/welcome-hero/welcome-banner.jpg) ;
     background-size:cover;
     background-repeat: no-repeat;
@@ -814,6 +814,7 @@ button {background: transparent;border: 0;font-size: 16px;text-transform: capita
     font-weight: 1000;
     padding-top: 10%;
 }
+
 
 
 /*-------------------------------------
